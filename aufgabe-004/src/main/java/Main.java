@@ -26,13 +26,13 @@ public class Main {
     // creating an instance of StringBuilder
     StringBuilder stringBuilder = new StringBuilder();
 
-    //Creating the output-String from the array in the demanded manner using StringBuilder
+    // Creating the output-String from the array in the demanded manner using StringBuilder
     for (int x: intArray) {
       stringBuilder.append(x).append(" ");
     }
     String output = stringBuilder.toString();
 
-    //Displaying the output in the terminal
+    // Displaying the output in the terminal
     System.out.println(output);
   }
 }
