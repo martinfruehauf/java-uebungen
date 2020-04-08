@@ -11,7 +11,7 @@
         <module>aufgabe-001</module>
         <module>aufgabe-002</module>
         <module>aufgabe-003</module>
-        <module>aufgabe-004</module>
+<!--        <module>aufgabe-004</module>
         <module>aufgabe-005</module>
         <module>aufgabe-006</module>
         <module>aufgabe-007</module>
@@ -20,7 +20,7 @@
         <module>aufgabe-010</module>
         <module>aufgabe-011</module>
         <module>aufgabe-012</module>
-        <module>aufgabe-013</module>
+        <module>aufgabe-013</module>-->
     </modules>
 </project>
 
