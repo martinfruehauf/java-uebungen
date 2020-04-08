@@ -17,7 +17,7 @@ public class Main {
         // 7
         // 6
 
-        int [] intArray = {5, 4, 3, 2, 1, 0, 9, 8, 7, 6};
+        int[] intArray = {5, 4, 3, 2, 1, 0, 9, 8, 7, 6};
         for(int x : intArray){
             System.out.println(x);
         }
