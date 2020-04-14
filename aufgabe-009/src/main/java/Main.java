@@ -7,32 +7,33 @@ public class Main {
     // Creating an instance of StringBuilder used for formatting the output
     StringBuilder stringBuilder = new StringBuilder();
 
-    // Declaration of Integers for the addition
-    int firstNumber;
-    int secondNumber;
+    // Declaration of Integers for the addition and parsing the Numbers from the String array into Integers
+    try {
+      int firstNumber = Integer.parseInt(calcData[1]);
+      int secondNumber = Integer.parseInt(calcData[2]);
 
-    // Parsing the Numbers from the String array into Integers
-    firstNumber = Integer.parseInt(calcData[1]);
-    secondNumber = Integer.parseInt(calcData[2]);
+      // Check if math operation has been implemented and then exercise it or give Error message
+      switch (calcData[0]) {
+      case "add":
+        stringBuilder.append(firstNumber).append(" + ").append(secondNumber).append(" = ").append(firstNumber + secondNumber);
+        break;
+      case "sub":
+        stringBuilder.append(firstNumber).append(" - ").append(secondNumber).append(" = ").append(firstNumber - secondNumber);
+        break;
+      case "mul":
+        stringBuilder.append(firstNumber).append(" * ").append(secondNumber).append(" = ").append(firstNumber * secondNumber);
+        break;
+      case "div":
+        stringBuilder.append(firstNumber).append(" / ").append(secondNumber).append(" = ").append(firstNumber / secondNumber);
+        break;
+      default:
+        stringBuilder.append(calcData[0]).append(" ist keine gültige Operation");
+      }
+      System.out.println(stringBuilder.toString());
 
-    // Check if math operation has been implemented and then exercise it or give Error message
-    switch (calcData[0]) {
-    case "add":
-      stringBuilder.append(firstNumber).append(" + ").append(secondNumber).append(" = ").append(firstNumber + secondNumber);
-      break;
-    case "sub":
-      stringBuilder.append(firstNumber).append(" - ").append(secondNumber).append(" = ").append(firstNumber - secondNumber);
-      break;
-    case "mul":
-      stringBuilder.append(firstNumber).append(" * ").append(secondNumber).append(" = ").append(firstNumber * secondNumber);
-      break;
-    case "div":
-      stringBuilder.append(firstNumber).append(" / ").append(secondNumber).append(" = ").append(firstNumber / secondNumber);
-      break;
-    default:
-      stringBuilder.append(calcData[0]).append(" ist keine gültige Operation");
+    } catch (NumberFormatException n) {
+      System.out.println(n +": expected an integer as parameter");
     }
-    System.out.println(stringBuilder.toString());
   }
 
   public static void main(String[] args) {
@@ -70,7 +71,6 @@ public class Main {
     // div 12 / 4 = 3
     // foo ist keine gültige Operation
     // Die Testklasse prüft alle vier Varianten durch.
-
 
     // Applying the function to the args Parameter
     calculation(args);
