@@ -77,13 +77,11 @@ public class Main {
 
     // Ausgabe: wird wieder über Tests geprüft.
 
-    if(args.length<3){
-      //throw new ArithmeticException("Zu wenig Parameter angebeben. Benutzung: taschenrechner.jar <methode> <operand1> <operand2>");
+    if (args.length < 3) {
       System.out.println("Zu wenig Parameter angebeben. Benutzung: taschenrechner.jar <methode> <operand1> <operand2>");
       return;
 
-    }else if(args.length>3){
-      //throw new ArithmeticException("Zu viele Parameter angebeben. Benutzung: taschenrechner.jar <methode> <operand1> <operand2>");
+    } else if (args.length > 3) {
       System.out.println("Zu viele Parameter angebeben. Benutzung: taschenrechner.jar <methode> <operand1> <operand2>");
       return;
     }
