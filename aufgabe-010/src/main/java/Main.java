@@ -33,6 +33,8 @@ public class Main {
 
     } catch (NumberFormatException n) {
       System.out.println("Ungültige Eingabe. Benutzung: taschenrechner.jar <methode> <operand1> <operand2>");
+      System.out.println("methode muss einer der folgenden Werte sein: add, sub, mul, div");
+      System.out.println("operand1 und operand2 müssen ganze Zahlen sein");
       return;
     }
   }
@@ -78,10 +80,12 @@ public class Main {
     if(args.length<3){
       //throw new ArithmeticException("Zu wenig Parameter angebeben. Benutzung: taschenrechner.jar <methode> <operand1> <operand2>");
       System.out.println("Zu wenig Parameter angebeben. Benutzung: taschenrechner.jar <methode> <operand1> <operand2>");
+      return;
 
     }else if(args.length>3){
       //throw new ArithmeticException("Zu viele Parameter angebeben. Benutzung: taschenrechner.jar <methode> <operand1> <operand2>");
       System.out.println("Zu viele Parameter angebeben. Benutzung: taschenrechner.jar <methode> <operand1> <operand2>");
+      return;
     }
 
     // Applying the function to the args Parameter
