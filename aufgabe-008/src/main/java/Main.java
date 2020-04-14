@@ -19,20 +19,21 @@ public class Main {
     secondNumber = Integer.parseInt(calcData[2]);
 
     // Check if math operation has been implemented and then exercise it or give Error message
-    if (calcData[0].equals("add")) {
-      stringBuilder.append(firstNumber).append(" + ").append(secondNumber).append(" = ").append(firstNumber + secondNumber);
-
-    } else if (calcData[0].equals("sub")) {
-      stringBuilder.append(firstNumber).append(" - ").append(secondNumber).append(" = ").append(firstNumber - secondNumber);
-
-    } else if (calcData[0].equals("mul")) {
-      stringBuilder.append(firstNumber).append(" * ").append(secondNumber).append(" = ").append(firstNumber * secondNumber);
-
-    } else if (calcData[0].equals("div")) {
-      stringBuilder.append(firstNumber).append(" / ").append(secondNumber).append(" = ").append(firstNumber / secondNumber);
-
-    } else {
-      stringBuilder.append(calcData[0]).append(" ist keine gültige Operation");
+    switch (calcData[0]) {
+      case "add":
+        stringBuilder.append(firstNumber).append(" + ").append(secondNumber).append(" = ").append(firstNumber + secondNumber);
+        break;
+      case "sub":
+        stringBuilder.append(firstNumber).append(" - ").append(secondNumber).append(" = ").append(firstNumber - secondNumber);
+        break;
+      case "mul":
+        stringBuilder.append(firstNumber).append(" * ").append(secondNumber).append(" = ").append(firstNumber * secondNumber);
+        break;
+      case "div":
+        stringBuilder.append(firstNumber).append(" / ").append(secondNumber).append(" = ").append(firstNumber / secondNumber);
+        break;
+      default:
+        stringBuilder.append(calcData[0]).append(" ist keine gültige Operation");
     }
     output = stringBuilder.toString();
     System.out.println(output);
