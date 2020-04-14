@@ -11,9 +11,6 @@ public class Main {
     int firstNumber;
     int secondNumber;
 
-    // Declaration and Initialization of String meant for displaying the result
-    String output = "";
-
     // Parsing the Numbers from the String array into Integers
     firstNumber = Integer.parseInt(calcData[1]);
     secondNumber = Integer.parseInt(calcData[2]);
@@ -35,8 +32,7 @@ public class Main {
     default:
       stringBuilder.append(calcData[0]).append(" ist keine gültige Operation");
     }
-    output = stringBuilder.toString();
-    System.out.println(output);
+    System.out.println(stringBuilder.toString());
   }
 
   public static void main(String[] args) {
