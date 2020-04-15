@@ -22,6 +22,13 @@ public class Main {
     // Larissa
     // John
 
+    // Converting the String into an array of Name Age Pairs
+    String[] datenArray = daten.split(",");
+
+    // Outputting the names
+    System.out.println("Namen:");
+    for (String x: datenArray) {
+      System.out.println(x.split(":")[0]);
     }
 
   }
