@@ -22,21 +22,6 @@ public class Main {
     // Larissa
     // John
 
-    // Converting the String into an array of Name Age Pairs
-    String[] datenArray = daten.split(",");
-
-    // Declaring a two dimensional array to save the pairs of name and age
-    String[][] nameAgePairs = new String[datenArray.length][2];
-
-    // Splitting the Name Age Pairs and saving it into the array
-    for (int i = 0; i < nameAgePairs.length; i++) {
-      nameAgePairs[i] = datenArray[i].split(":");
-    }
-
-    // Outputting the names
-    System.out.println("Namen:");
-    for (int i = 0; i < nameAgePairs.length; i++) {
-      System.out.println(nameAgePairs[i][0]);
     }
 
   }
