@@ -51,7 +51,7 @@ public class MainTest {
 
         Main.main(new String[]{"c", "66",});
 
-        Mockito.verify(out).println("args[0] ist unültig");
+        Mockito.verify(out).println("args[0] ist ungültig.");
         Mockito.verify(out).println("0 + 66 = 66");
         Mockito.verifyNoMoreInteractions(out);
     }
@@ -61,7 +61,7 @@ public class MainTest {
 
         Main.main(new String[]{"34", "c",});
 
-        Mockito.verify(out).println("args[1] ist unültig");
+        Mockito.verify(out).println("args[1] ist ungültig.");
         Mockito.verify(out).println("34 + 0 = 34");
         Mockito.verifyNoMoreInteractions(out);
     }
